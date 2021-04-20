@@ -1,0 +1,8 @@
+# Register a ConnectionFactory in JNDI using the form:
+# connectionfactory.[jndiName] = [ConnectionURL]
+connectionfactory.SERVICEBUSCONNECTIONFACTORY = amqps://boomi-dev2.servicebus.windows.net?max-prefetch=1
+# Register some queues in JNDI using the form:
+# queue.[jndiName] = [physicalName]
+queue.QUEUE = gaston.queue
+queue.SUBSCRIPTION = gaston.topic/subscriptions/gaston.subscription
+topic.TOPIC = gaston.topic
